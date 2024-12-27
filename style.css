@@ -1,0 +1,191 @@
+/* Resetando alguns estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #1c1c1c; /* fundo escuro para um estilo premium */
+    color: #fff; /* texto branco */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+/* Estilos para o Header */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Garantir que o header ocupe toda a altura da tela */
+    overflow: hidden; /* Oculta qualquer parte do vídeo que ultrapasse a área */
+    text-align: center;
+    color: #fff;
+}
+
+header video {
+    width: 100%;
+    height: 100%; /* O vídeo ocupará 100% da altura do header */
+    object-fit: cover; /* Faz com que o vídeo cubra toda a área do header sem distorções */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+/* Conteúdo do Header */
+.header-content {
+    position: absolute;
+    top: 50%; /* Coloca o conteúdo no meio da tela */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o conteúdo */
+    z-index: 1;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra suave para o título */
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra suave para o texto */
+}
+
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Seção principal */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 10%;
+    flex-wrap: wrap;
+}
+
+.product-description {
+    width: 50%;
+    padding: 20px;
+    color: #e0e0e0; /* texto cinza claro */
+}
+
+.product-description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff; /* título branco */
+}
+
+.product-description p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.product-description ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.product-description ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #e60000; /* vermelho Porsche */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c30000; /* tom mais escuro de vermelho */
+}
+
+.product-image {
+    width: 40%;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Depoimentos */
+.testimonials {
+    background-color: #2c2c2c; /* fundo escuro */
+    padding: 40px 10%;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+}
+
+.testimonial cite {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+footer {
+    background-color: #000;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        margin: 30px 5%;
+    }
+
+    .product-description, .product-image {
+        width: 100%;
+    }
+}
